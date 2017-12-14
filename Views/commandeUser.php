@@ -8,14 +8,22 @@ for ($i=0;$i<count($afficherCommandeUser); $i++){
             <div class="card h-100">
                 <a href="#"><img class="card-img-top"  src="<?= $afficherCommandeUser[$i]['photo'] ?>" alt=""></a>
                 <div class="card-body">
-                    <h1><?= $afficherCommandeUser[$i]['ref'] ?></h1>
+                    <h1><?= $afficherCommandeUser[$i]['name'] ?></h1>
                     <h4 class="card-title">
-                        <a href="#"><?= $afficherCommandeUser[$i]['user_id'] ?></a>
+                        <a href="#"><?= $afficherCommandeUser[$i]['marque'] ?></a>
                     </h4>
-                    <p class="card-text"><?= $afficherCommandeUser[$i]['glasses_is'] ?></p>
+                    <p class="card-text"><?= $afficherCommandeUser[$i]['price'] ?></p>
+                </div>
+                <div class="card-footer">
+                    <p><?= $afficherCommandeUser[$i]['size'] ?></p> <br>
+                    <p><?= $afficherCommandeUser[$i]['type'] ?></p><br>
+                    <p><?= $afficherCommandeUser[$i]['ref'] ?></p>
+                    <p><?= $afficherCommandeUser[$i]['sexe'] ?></p>
+
                 </div>
             </div>
         </div>
+
     </div>
 <?php } ?>
 
