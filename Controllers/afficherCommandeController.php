@@ -6,7 +6,7 @@ $afficherCommandeUser  = $afficher->afficherCommande($_SESSION['id']);
 if (!empty($_SESSION))
 {
     $afficher->afficherComande($_SESSION['id']);
-    $succes = "<p class='erreur'>Local Actif</p>";
+    $succes = "<p class='erreur'>Products</p>";
 
 }
 require_once ('Views/commandeUser.php');
