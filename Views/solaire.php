@@ -1,4 +1,4 @@
-<?
+<?php
 require_once ('Views/Layout.php');
 ?>
 <body>
