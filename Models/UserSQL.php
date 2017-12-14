@@ -1,8 +1,65 @@
 <?php
-
+ini_set('display_errors', 1);
+ini_set('error_reporting', E_ALL);
 class UserSQL
 {
 
+
+
+
+
+
+
+
+    public function inscriptionCompte()
+    {
+        global $bdd;
+        $password = crypt($_POST['password'], '$2a$07$302838711915bef2db65cc$');
+        $name = $_POST['name'];
+        $lastName = $_POST['last_name'];
+        $mail = $_POST['mail'];
+        $street = $_POST['street'];
+        $zip_code=$_POST['zip_code'];
+        $city=$_POST['city'];
+        $country=$_POST['country'];
+        $phone = $_POST['phone'];
+
+        $inscription = $bdd->prepare("INSERT INTO users (name, last_name,  mail,  password,street, zip_code,city,country,phone) VALUES(:name, :last_name, :mail,  :password,:street, :zip_code,:city,:country,:phone)");
+
+
+        $inscription->bindParam(":name", $name, PDO::PARAM_STR);
+        $inscription->bindParam(":last_name", $lastName, PDO::PARAM_STR);
+        $inscription->bindParam(":mail", $mail, PDO::PARAM_STR);
+        $inscription->bindParam(":password", $password, PDO::PARAM_STR);
+        $inscription->bindParam(":street", $street, PDO::PARAM_STR);
+        $inscription->bindParam(":zip_code", $zip_code, PDO::PARAM_STR);
+        $inscription->bindParam(":city", $city, PDO::PARAM_STR);
+        $inscription->bindParam(":country", $country, PDO::PARAM_STR);
+        $inscription->bindParam(":phone", $phone, PDO::PARAM_STR);
+
+
+
+        if ($inscription->execute()) {
+
+            return $bdd->lastInsertId();
+        }
+    }
+
+
+    public function connectionCompte()
+    {
+
+        global $bdd;
+        $mail = $_POST['mail'];
+        $password = crypt($_POST['password'], '$2a$07$302838711915bef2db65cc$');
+        $connection = $bdd->prepare("SELECT * FROM users WHERE mail = :mail AND password = :password");
+        $connection->bindParam(":mail", $mail, PDO::PARAM_STR);
+        $connection->bindParam(":password", $password, PDO::PARAM_STR);
+        $connection->execute();
+        $compte = $connection->fetchAll();
+
+        return $compte;
+    }
 
     public function recupererUtilisateur($id=null)
     {
