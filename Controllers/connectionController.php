@@ -8,9 +8,10 @@ if (!empty($_POST)) {
     $compte = $connect->connectionCompte();
       $_SESSION['connected'] = true;
       $_SESSION['id'] = $compte[0]['id'];
-
+  
+    var_dump($_SESSION);
 }
-        var_dump($_SESSION);
-       
+      
+       header('location:index.php');
     
 require_once('Views/connection.php');

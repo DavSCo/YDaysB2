@@ -7,7 +7,7 @@ ini_set('error_reporting',E_ALL);
 
 $bdd = 'mysql:dbname=Ydays;host=localhost';
 $user = 'root';
-$password = 'root';
+$password = '';
 try {
     $bdd = new PDO($bdd ,$user,$password);
 } catch (PDOException $e) {
