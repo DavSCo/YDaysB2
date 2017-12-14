@@ -18,7 +18,7 @@ require_once ('Views/Layout.php');
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="index.php?p=adminUser">AdminUser</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Services</a>
