@@ -5,6 +5,7 @@ require_once ('Models/dbConn.php');
 require_once ('Models/UserSQL.php');
 require_once ('Models/CommandeSQL.php');
 require_once ('Models/GlassesSQL.php');
+require_once ('Models/AdminSQL.php');
 
 
 
@@ -30,4 +31,7 @@ require_once ('Controllers/afficherCommandeController.php');
     require_once('Controllers/connectionController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'deconnection'){
     require_once('Controllers/deconnectionController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'listProductAdmin'){
+    require_once('Controllers/productAdminController.php');
 }
+

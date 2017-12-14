@@ -17,7 +17,6 @@
         <h1></h1>
         <ul>
             <li><a href="index.php?p=commandeUser" id="targeted">My Products</a></li>
-            <li><a href="#update">Add Product</a></li>
             <li><a href="#update">Update</a></li>
             <li><a href="#delete">Delete</a></li>
         </ul>
@@ -25,17 +24,17 @@
     <div class="main">
         <div class="mainContent clearfix">
             <div id="update">
-                <form id="form" class="topBefore">
+                <form id="form" class="topBefore" method="post">
                     <input type="text" placeholder="Name"  name="name">
                     <input type="text" placeholder="LastName"  name="last_name">
                     <input type="email" placeholder="Mail" name="mail">
-                    <input type="text" placeholder="Phone" name="phone">
+                    <input type="number" placeholder="Phone" name="phone">
                     <input type="password" placeholder="Password" name="password">
                     <input id="submit" type="submit" value="Modifier">
                 </form>
             </div>
             <div class="delete" id="delete">
-                <a href="index.php?p=delete_user&id=">Confirmer</a>
+                <a href="index.php?p=delete_user&id=<?= $_SESSION['id']?>">Confirmer</a>
             </div>
         </div>
     </div>

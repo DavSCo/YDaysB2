@@ -55,10 +55,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="Views/layoutAdministrateur.php">Administrateur</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.php?p=deconnection">Deconnection</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="index.php?p=adminUser">Admin</a>
                     </li>
 
 

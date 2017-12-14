@@ -61,21 +61,21 @@ class UserSQL
         return $compte;
     }
 
-    public function recupererUtilisateur($id=null)
+    public function recupUser($id=null)
     {
         global $bdd;
 
         if ($id !== null){
-            $recuperer=$bdd->prepare("SELECT * FROM users where id=:id");
+            $recup=$bdd->prepare("SELECT * FROM users where id=:id");
             $cast=intval($id);
-            $recuperer->bindParam(":id", $cast, PDO::PARAM_STR);
-            $recuperer->execute();
-            $users=$recuperer->fetchAll();
+            $recup->bindParam(":id", $cast, PDO::PARAM_STR);
+            $recup->execute();
+            $users=$recup->fetchAll();
             return $users;
         }else{
-            $recuperer=$bdd->prepare("select * from users");
-            $recuperer->execute();
-            $recupAll=$recuperer->fetchAll();
+            $recup=$bdd->prepare("select * from users");
+            $recup->execute();
+            $recupAll=$recup->fetchAll();
             return $recupAll;
 
         }
@@ -107,13 +107,14 @@ class UserSQL
         $password = crypt($password, '$2a$07$302838711915bef2db65cc$');
         $update=$bdd->prepare("UPDATE users SET  name = :name, last_name= :last_name , mail = :mail,phone=:phone, password = :password WHERE id=:id");
         $update->bindParam(":name", $name, PDO::PARAM_STR);
-        $update->bindParam(":lastName", $last_name, PDO::PARAM_STR);
+        $update->bindParam(":last_name", $last_name, PDO::PARAM_STR);
         $update->bindParam(":mail", $mail, PDO::PARAM_STR);
         $update->bindParam(":phone", $phone, PDO::PARAM_STR);
         $update->bindParam(":password", $password, PDO::PARAM_STR);
         $update->bindParam(":id", $id, PDO::PARAM_STR);
         $update->execute();
 
+        var_dump($update->errorInfo());
 
     }
 
