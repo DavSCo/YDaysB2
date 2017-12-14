@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="175560ca-27da-448b-bb15-d0ceef567f45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/home.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Views/test.php" afterPath="$PROJECT_DIR$/Views/Layout.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/shop-homepage.css" afterPath="$PROJECT_DIR$/Views/css/shop-homepage.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap-grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap-grid.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap-reboot.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap-reboot.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/Views/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/Views/vendor/jquery/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/Views/vendor/jquery/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Controllers/indexController.php" afterPath="$PROJECT_DIR$/Controllers/homeController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/bdd.sql" afterPath="$PROJECT_DIR$/Models/bdd.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/home.php" afterPath="$PROJECT_DIR$/Views/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,21 +20,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1926">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Models/bdd.sql">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+            <state relative-caret-position="-2361">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/homeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -72,10 +68,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Views/home.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Views/Layout.php" />
         <option value="$PROJECT_DIR$/Models/bdd.sql" />
+        <option value="$PROJECT_DIR$/Views/home.php" />
+        <option value="$PROJECT_DIR$/Controllers/homeController.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -254,12 +251,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513246767611</updated>
-      <workItem from="1513246769052" duration="680000" />
+      <workItem from="1513246769052" duration="870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="680000" />
+    <option name="totallyTimeSpent" value="870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -322,14 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/Layout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -338,18 +327,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1926">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/bdd.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
           <caret line="107" column="46" lean-forward="false" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/homeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2361">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
