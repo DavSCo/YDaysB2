@@ -44,6 +44,12 @@
                     <a class="nav-link" href="index.php?p=join">Inscription</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=connection">Connection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=deconnection">Deconnection</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>

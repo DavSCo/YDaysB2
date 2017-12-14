@@ -26,4 +26,8 @@ require_once ('Controllers/afficherCommandeController.php');
     require_once('Controllers/vueController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
     require_once('Controllers/productDetailController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'connection'){
+    require_once('Controllers/connectionController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'deconnection'){
+    require_once('Controllers/deconnectionController.php');
 }
