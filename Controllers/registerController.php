@@ -6,7 +6,8 @@ if (!empty($_POST)) {
 
     $create->inscriptionCompte();
     $succes = "<p class='erreur'>Inscription terminée</p>";
+    header('Location:index.php');
 }
 
 
-require_once("Views/join.php");
+require_once("Views/register.php");

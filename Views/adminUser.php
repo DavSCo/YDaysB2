@@ -17,6 +17,7 @@
         <h1></h1>
         <ul>
             <li><a href="index.php?p=commandeUser" id="targeted">My Products</a></li>
+            <li><a href="#update">Add Product</a></li>
             <li><a href="#update">Update</a></li>
             <li><a href="#delete">Delete</a></li>
         </ul>
