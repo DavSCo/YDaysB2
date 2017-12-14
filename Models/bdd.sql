@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:8889
--- Généré le :  Jeu 14 Décembre 2017 à 11:39
+-- Généré le :  Jeu 14 Décembre 2017 à 11:42
 -- Version du serveur :  5.6.33
 -- Version de PHP :  7.0.12
 
@@ -13,6 +13,36 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `Ydays`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `commandes`
+--
+
+CREATE TABLE `commandes` (
+  `id` int(11) NOT NULL,
+  `ref` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `glasses_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `glasses`
+--
+
+CREATE TABLE `glasses` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `marque` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `size` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `ref` varchar(255) NOT NULL,
+  `sexe` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -38,6 +68,20 @@ CREATE TABLE `users` (
 --
 
 --
+-- Index pour la table `commandes`
+--
+ALTER TABLE `commandes`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `glasses_id` (`glasses_id`);
+
+--
+-- Index pour la table `glasses`
+--
+ALTER TABLE `glasses`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -47,6 +91,16 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour les tables exportées
 --
 
+--
+-- AUTO_INCREMENT pour la table `commandes`
+--
+ALTER TABLE `commandes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `glasses`
+--
+ALTER TABLE `glasses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
