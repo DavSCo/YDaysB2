@@ -12,6 +12,6 @@ if (!empty($_POST)) {
     var_dump($_SESSION);
 }
       
-       header('location:index.php');
+
     
 require_once('Views/connection.php');
