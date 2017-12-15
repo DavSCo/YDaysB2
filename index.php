@@ -16,7 +16,7 @@ require_once ('Controllers/updateUserController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'delete_user'){
 require_once ('Controllers/deleteUserController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'commandeUser'){
-require_once ('Controllers/afficherCommandeController.php');
+    require_once ('Controllers/afficherCommandeController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'register'){
     require_once('Controllers/registerController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'addProduct'){
@@ -31,7 +31,16 @@ require_once ('Controllers/afficherCommandeController.php');
     require_once('Controllers/connectionController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'deconnection'){
     require_once('Controllers/deconnectionController.php');
-}elseif(!isset($_GET['p']) OR $_GET['p'] === 'listProductAdmin'){
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'layoutAdministrateur'){
+    require_once('Controllers/layoutAdministrateurController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'listGlassesAdmin'){
     require_once('Controllers/productAdminController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'connectionAdmin'){
+    require_once('Controllers/connectionAdminController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'deleteGlasses'){
+    require_once('Controllers/deleteGlassesController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'updateGlasses'){
+    require_once('Controllers/updateGlassesController.php');
 }
+
 

@@ -5,7 +5,7 @@ $afficherCommandeUser  = $afficher->afficherCommande($_SESSION['id']);
 
 if (!empty($_SESSION))
 {
-    $afficher->afficherComande($_SESSION['id']);
+    $afficher->afficherCommande($_SESSION['id']);
     $succes = "<p class='erreur'>Products</p>";
 
 }

@@ -1,8 +1,8 @@
 <?php
-require_once ('Models/GlassesSQL.php');
+/*require_once ('Models/AdminSQl.php');*/
 
-$select = new GlassesSQL();
+$select = new AdminSQL();
 
-$selectWithId = $select->selectGlassesWithId($_GET['id']);
+$selectGlasses = $select->selectGlasses();
 
 require_once ('Views/listGlassesAdmin.php');

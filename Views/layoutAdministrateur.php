@@ -8,14 +8,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Administrateur</title>
-    <!-- Bootstrap core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template-->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Page level plugin CSS-->
-    <link href="vendor/datatables/dataTables.bootstrap5.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="Views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="Views/css/shop-homepage.css" rel="stylesheet">
+    <link href="Views/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template-->
-    <link href="css/sb-administrateur.css" rel="stylesheet">
+    <link href="Views/css/sb-admin.css" rel="stylesheet">
+    <link href="Views/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
+    <link href="Views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="Views/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Page level plugin CSS-->
+    <link href="Views/vendor/datatables/dataTables.bootstrap5.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="Views/css/sb-administrateur.css" rel="stylesheet">
+    <link href="Views/css/styleform.css" rel="stylesheet">
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -40,9 +52,9 @@
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="index.php?p=addProduct">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">Delete</span>
+                    <span class="nav-link-text">Add Product</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">

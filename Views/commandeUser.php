@@ -12,7 +12,7 @@ for ($i=0;$i<count($afficherCommandeUser); $i++){
                     <h4 class="card-title">
                         <a href="#"><?= $afficherCommandeUser[$i]['user_id'] ?></a>
                     </h4>
-                    <p class="card-text"><?= $afficherCommandeUser[$i]['glasses_is'] ?></p>
+                    <p class="card-text"><?= $afficherCommandeUser[$i]['glasses_id'] ?></p>
                 </div>
             </div>
         </div>
