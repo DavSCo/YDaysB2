@@ -9,7 +9,7 @@
 class GlassesSQL
 {
 
-    public function AddGlasses()
+    public function AddGlasses($image)
     {
         global $bdd;
 
@@ -22,7 +22,8 @@ class GlassesSQL
         $sexe = $_POST['sexe'];
 
 
-        $add = $bdd->prepare("INSERT INTO glasses (name, marque,  price,  size, type, ref, sexe) VALUES(:name, :marque,  :price,  :size, :type, :ref, :sexe)");
+
+        $add = $bdd->prepare("INSERT INTO glasses (name, marque,  price,  size, type, ref, sexe, image) VALUES(:name, :marque,  :price,  :size, :type, :ref, :sexe, :image)");
 
 
         $add->bindParam(":name", $name, PDO::PARAM_STR);
@@ -32,6 +33,7 @@ class GlassesSQL
         $add->bindParam(":type", $type, PDO::PARAM_STR);
         $add->bindParam(":ref", $ref, PDO::PARAM_STR);
         $add->bindParam(":sexe", $sexe, PDO::PARAM_STR);
+        $add->bindParam(":image", $image, PDO::PARAM_STR);
 
         $add->execute();
 

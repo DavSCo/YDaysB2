@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>YDAYS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="Views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,10 @@
     <!-- Custom styles for this template-->
     <link href="Views/css/sb-admin.css" rel="stylesheet">
     <link href="Views/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="Views/css/1-col-portfolio.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
 
 </head>
@@ -45,7 +49,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?p=connection">Connection</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?p=panier"><i class="material-icons">shopping_basket</i></a>
+                    </li>
                 <?php }else {?>
                     <li class="nav-item active">
                         <a class="nav-link" href="index.php">Home
@@ -57,6 +66,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?p=adminUser">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?p=panier"><i class="material-icons">shopping_basket</i></a>
                     </li>
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:8889
--- Généré le :  Jeu 14 Décembre 2017 à 11:42
+-- Généré le :  Ven 15 Décembre 2017 à 14:00
 -- Version du serveur :  5.6.33
 -- Version de PHP :  7.0.12
 
@@ -13,6 +13,25 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `Ydays`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `admin`
+--
+
+INSERT INTO `admin` (`id`, `mail`, `password`) VALUES
+(1, 'admin@admin.fr', 'admin');
 
 -- --------------------------------------------------------
 
@@ -41,8 +60,22 @@ CREATE TABLE `glasses` (
   `size` varchar(255) NOT NULL,
   `type` varchar(255) NOT NULL,
   `ref` varchar(255) NOT NULL,
-  `sexe` varchar(255) NOT NULL
+  `sexe` varchar(255) NOT NULL,
+  `image` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `glasses`
+--
+
+INSERT INTO `glasses` (`id`, `name`, `marque`, `price`, `size`, `type`, `ref`, `sexe`, `image`) VALUES
+(1, 'test', 't', 't', 't', 't', 't', 't', ''),
+(2, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
+(3, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
+(4, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
+(5, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', ''),
+(6, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', ''),
+(7, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', '');
 
 -- --------------------------------------------------------
 
@@ -64,8 +97,21 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `last_name`, `mail`, `password`, `street`, `zip_code`, `city`, `country`, `phone`) VALUES
+(1, 'Bill', 'gate', 'b@b.fr', '$2a$07$302838711915bef2db65cO0u1RrG1.8x9wubJNk6RQGUQVbYY8iD2', '15-17 RUE LOUIS BLANC', '75010', 'PARIS ', 'France', '06128767677');
+
+--
 -- Index pour les tables exportées
 --
+
+--
+-- Index pour la table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `commandes`
@@ -92,6 +138,11 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT pour la table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT pour la table `commandes`
 --
 ALTER TABLE `commandes`
@@ -100,9 +151,9 @@ ALTER TABLE `commandes`
 -- AUTO_INCREMENT pour la table `glasses`
 --
 ALTER TABLE `glasses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

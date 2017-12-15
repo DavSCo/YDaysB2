@@ -15,7 +15,7 @@ require_once ('Views/Layout.php');
                 <a href="#" class="list-group-item">Lentilles</a>
 
           </div>
-            <a href="#" class="btn btn-success">Acheter</a>
+            <a href="index.php?p=panier&id=<?php echo $selectWithId['id']?>" class="btn btn-success">Acheter</a>
         </div>
 
         <!-- /.col-lg-3 -->

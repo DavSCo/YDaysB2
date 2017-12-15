@@ -71,6 +71,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="field">
+                        <label>Reference</label>
+                        <div class="fields">
+                            <div class="twelve wide field">
+                                <input type="file" placeholder="Image " name="image"> <br>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                     <button type="submit" class="ui button">Add Glasses</button>

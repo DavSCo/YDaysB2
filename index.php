@@ -41,6 +41,12 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/deleteGlassesController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'updateGlasses'){
     require_once('Controllers/updateGlassesController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'panier'){
+    require_once('Controllers/panierController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'rentPage'){
+    require_once('Controllers/rentPageController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'paymentPage'){
+    require_once('Controllers/paymentPageController.php');
 }
 
 
