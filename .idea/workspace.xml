@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="175560ca-27da-448b-bb15-d0ceef567f45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/rentPageController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/addProductController.php" afterPath="$PROJECT_DIR$/Controllers/addProductController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/updateUserController.php" afterPath="$PROJECT_DIR$/Controllers/updateUserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/GlassesSQL.php" afterPath="$PROJECT_DIR$/Models/GlassesSQL.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/bdd.sql" afterPath="$PROJECT_DIR$/Models/bdd.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Layout.php" afterPath="$PROJECT_DIR$/Views/Layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/addProduct.php" afterPath="$PROJECT_DIR$/Views/addProduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/layoutAdministrateur.php" afterPath="$PROJECT_DIR$/Views/layoutAdministrateur.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/productDetail.php" afterPath="$PROJECT_DIR$/Views/productDetail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/home.php" afterPath="$PROJECT_DIR$/Views/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/solaire.php" afterPath="$PROJECT_DIR$/Views/solaire.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/vue.php" afterPath="$PROJECT_DIR$/Views/vue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,26 +21,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="panier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/panier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paymentPageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/paymentPageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="58" lean-forward="false" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="paymentPage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/paymentPage.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,12 +31,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Models/bdd.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
+            <state relative-caret-position="2370">
               <caret line="158" column="64" lean-forward="false" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbConn.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Models/dbConn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="87" column="117" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/vue.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="62" column="117" lean-forward="false" selection-start-line="62" selection-start-column="117" selection-end-line="62" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="solaire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/solaire.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="62" column="117" lean-forward="false" selection-start-line="62" selection-start-column="117" selection-end-line="62" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -79,41 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rentPageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/rentPageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="productDetail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/productDetail.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="panierController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/panierController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productAdminController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controllers/productAdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -150,13 +145,10 @@
         <option value="$PROJECT_DIR$/Controllers/vueController.php" />
         <option value="$PROJECT_DIR$/Controllers/productDetailController.php" />
         <option value="$PROJECT_DIR$/Models/dbConn.php" />
-        <option value="$PROJECT_DIR$/Views/home.php" />
         <option value="$PROJECT_DIR$/Controllers/connectionController.php" />
         <option value="$PROJECT_DIR$/Views/addProduct.php" />
         <option value="$PROJECT_DIR$/Models/GlassesSQL.php" />
         <option value="$PROJECT_DIR$/Controllers/addProductController.php" />
-        <option value="$PROJECT_DIR$/Views/solaire.php" />
-        <option value="$PROJECT_DIR$/Views/vue.php" />
         <option value="$PROJECT_DIR$/Views/Layout.php" />
         <option value="$PROJECT_DIR$/Controllers/updateUserController.php" />
         <option value="$PROJECT_DIR$/Views/productDetail.php" />
@@ -168,6 +160,10 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Views/paymentPage.php" />
         <option value="$PROJECT_DIR$/Models/bdd.sql" />
+        <option value="$PROJECT_DIR$/Views/home.php" />
+        <option value="$PROJECT_DIR$/Views/vue.php" />
+        <option value="$PROJECT_DIR$/Views/solaire.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -229,24 +225,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YDaysB2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YDaysB2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,12 +343,12 @@
       <option name="presentableId" value="Default" />
       <updated>1513246767611</updated>
       <workItem from="1513246769052" duration="10757000" />
-      <workItem from="1513340751504" duration="1804000" />
+      <workItem from="1513340751504" duration="2470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12561000" />
+    <option name="totallyTimeSpent" value="13227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -425,14 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/productDetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/CommandeSQL.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -627,36 +597,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/solaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding>
-            <marker date="1513339897000" expanded="true" signature="1546:1687" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1606:1613" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1614:1621" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1622:1629" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1630:1637" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1638:1645" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1970:2129" ph="..." />
-            <marker date="1513339897000" expanded="true" signature="1998:2094" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Models/GlassesSQL.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1513339897000" expanded="true" signature="442:583" ph="INSERT INTO users... " />
-            <marker date="1513339897000" expanded="true" signature="1191:1212" ph="SELECT * FRO... glasses" />
-            <marker date="1513339897000" expanded="true" signature="1468:1502" ph="SELECT * FRO... glasses" />
-            <marker date="1513339897000" expanded="true" signature="1828:1936" ph="SELECT * FRO... glasses" />
-            <marker date="1513339897000" expanded="true" signature="1862:1915" ph="SELECT COUNT... glasses" />
-            <marker date="1513339897000" expanded="true" signature="2183:2217" ph="SELECT * FRO... glasses" />
-            <marker date="1513339897000" expanded="true" signature="2183:2227" ph="SELECT * FRO... glasses" />
-            <marker date="1513339897000" expanded="true" signature="2456:2496" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="442:583" ph="INSERT INTO users... " />
+            <marker date="1513342954000" expanded="true" signature="1191:1212" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="1468:1502" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="1828:1936" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="1862:1915" ph="SELECT COUNT... glasses" />
+            <marker date="1513342954000" expanded="true" signature="2183:2217" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="2183:2227" ph="SELECT * FRO... glasses" />
+            <marker date="1513342954000" expanded="true" signature="2456:2496" ph="SELECT * FRO... glasses" />
           </folding>
         </state>
       </provider>
@@ -679,34 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/vue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/productDetailController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="98" lean-forward="false" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/dbConn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -772,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/Views/panier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -825,10 +754,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="87" column="117" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/vue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="62" column="117" lean-forward="false" selection-start-line="62" selection-start-column="117" selection-end-line="62" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/solaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="117" lean-forward="false" selection-start-line="62" selection-start-column="117" selection-end-line="62" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Models/bdd.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
+        <state relative-caret-position="2370">
           <caret line="158" column="64" lean-forward="false" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/dbConn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
