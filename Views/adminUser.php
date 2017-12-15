@@ -25,11 +25,11 @@
         <div class="mainContent clearfix">
             <div id="update">
                 <form id="form" class="topBefore" method="post">
-                    <input type="text" placeholder="Name"  name="name">
-                    <input type="text" placeholder="LastName"  name="last_name">
-                    <input type="email" placeholder="Mail" name="mail">
-                    <input type="number" placeholder="Phone" name="phone">
-                    <input type="password" placeholder="Password" name="password">
+                    <input type="text" value="<?$updateUsers['name'] ?>" placeholder="Name"  name="name">
+                    <input type="text"value="<?$updateUsers['last_name'] ?>" placeholder="LastName"  name="last_name">
+                    <input type="email" value="<?$updateUsers['mail'] ?>"placeholder="Mail" name="mail">
+                    <input type="number"value="<?$updateUsers['phone'] ?>" placeholder="Phone" name="phone">
+                    <input type="password"value="<?$updateUsers['password'] ?>" placeholder="Password" name="password">
                     <input id="submit" type="submit" value="Modifier">
                 </form>
             </div>
