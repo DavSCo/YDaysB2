@@ -12,7 +12,7 @@ require_once ('Views/Layout.php');
             <div class="list-group">
                 <a href="index.php?p=solaire" class="list-group-item">Solaire</a>
                 <a href="index.php?p=vue" class="list-group-item">Vue</a>
-                <a href="#" class="list-group-item">Lentilles</a>
+                <a href="index.php?p=lentille" class="list-group-item">Lentilles</a>
 
           </div>
             <a href="index.php?p=panier&id=<?php echo $selectWithId['id']?>" class="btn btn-success">Acheter</a>
@@ -23,7 +23,7 @@ require_once ('Views/Layout.php');
         <div class="col-lg-9">
 
           <div class="card mt-4">
-            <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+            <img class="card-img-top img-fluid" src="<?=$selectWithId['image'] ?>" alt="">
             <div class="card-body">
               <h3 class="card-title"><?php echo $selectWithId['name']?></h3>
               <h4><?php echo $selectWithId['price']?> €</h4>
