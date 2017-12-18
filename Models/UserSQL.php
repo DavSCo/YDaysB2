@@ -5,12 +5,6 @@ class UserSQL
 {
 
 
-
-
-
-
-
-
     public function inscriptionCompte()
     {
         global $bdd;

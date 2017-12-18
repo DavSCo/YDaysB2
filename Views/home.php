@@ -14,7 +14,7 @@ require_once ('Views/Layout.php');
             <div class="list-group">
                 <a href="index.php?p=solaire" class="list-group-item">Solaire</a>
                 <a href="index.php?p=vue" class="list-group-item">Vue</a>
-                <a href="#" class="list-group-item">Lentilles</a>
+                <a href="index.php?p=lentille" class="list-group-item">Lentilles</a>
             </div>
 
         </div>
@@ -54,7 +54,7 @@ require_once ('Views/Layout.php');
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <a href="index.php?p=productDetail&id=<?php echo $item['id']?>"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                        <a href="index.php?p=productDetail&id=<?php echo $item['id']?>"><img class="card-img-top" src="<?= $item['image']?>" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a href="index.php?p=productDetail&id=<?php echo $item['id']?>"><?php echo $item['name']?></a>
