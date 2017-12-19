@@ -1,4 +1,4 @@
-<?php require_once ('Views/layoutAdministrateur.php');?>
+<?php require_once ('Views/LayoutAdmin.php');?>
 <div class="mainContent clearfix">
     <div id="update">
         <form id="form" class="topBefore" method="post">

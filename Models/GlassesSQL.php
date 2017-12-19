@@ -9,7 +9,7 @@
 class GlassesSQL
 {
 
-    public function AddGlasses($image)
+    public function AddGlasses()
     {
         global $bdd;
 
@@ -23,7 +23,7 @@ class GlassesSQL
 
 
 
-        $add = $bdd->prepare("INSERT INTO glasses (name, marque,  price,  size, type, ref, sexe, image) VALUES(:name, :marque,  :price,  :size, :type, :ref, :sexe, :image)");
+        $add = $bdd->prepare("INSERT INTO glasses (name, marque,  price,  size, type, ref, sexe) VALUES(:name, :marque,  :price,  :size, :type, :ref, :sexe)");
 
 
         $add->bindParam(":name", $name, PDO::PARAM_STR);
@@ -33,7 +33,7 @@ class GlassesSQL
         $add->bindParam(":type", $type, PDO::PARAM_STR);
         $add->bindParam(":ref", $ref, PDO::PARAM_STR);
         $add->bindParam(":sexe", $sexe, PDO::PARAM_STR);
-        $add->bindParam(":image", $image, PDO::PARAM_STR);
+
 
         $add->execute();
 
@@ -98,5 +98,16 @@ class GlassesSQL
         $vueGlasses = $selectVue->fetchAll();
 
         return $vueGlasses;
+    }
+
+    public function countGlasses()
+    {
+        global $bdd;
+
+        $count = $bdd->prepare("SELECT COUNT(*) FROM glasses");
+        $count->execute();
+        $counts = $count->fetchAll();
+
+        return $counts;
     }
 }

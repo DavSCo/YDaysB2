@@ -1,9 +1,13 @@
-<?php require_once ("Views/Layout.php");?>
+<?php require_once ("Views/LayoutAdmin.php");?>
 
-
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!-- Breadcrumbs-->
+        <div class="row">
 <header class="masthead">
     <div class="container h-100">
         <div class="login-page">
+
             <div class="form">
                 <form class="ui form" method="post"enctype="multipart/form-data">
                     <h4 class="ui dividing header">Add Glasses</h4>
@@ -92,5 +96,8 @@
     </div>
 
 </header>
+        </div>
+    </div>
+</div>
 
 

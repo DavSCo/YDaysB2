@@ -31,10 +31,6 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/connectionController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'deconnection'){
     require_once('Controllers/deconnectionController.php');
-}elseif(!isset($_GET['p']) OR $_GET['p'] === 'layoutAdministrateur'){
-    require_once('Controllers/layoutAdministrateurController.php');
-}elseif(!isset($_GET['p']) OR $_GET['p'] === 'listGlassesAdmin'){
-    require_once('Controllers/productAdminController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'connectionAdmin'){
     require_once('Controllers/connectionAdminController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'deleteGlasses'){
@@ -47,6 +43,13 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/rentPageController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'paymentPage'){
     require_once('Controllers/paymentPageController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'adminView'){
+    require_once('Controllers/adminViewController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'listProductAdmin'){
+    require_once('Controllers/ListProductAdminController.php');
+} elseif(!isset($_GET['p']) OR $_GET['p'] === 'monCompte'){
+    require_once('Controllers/monCompteController.php');
 }
+
 
 

@@ -15,7 +15,7 @@ if (!empty($_POST['mail'])&& !empty($_POST['password'])) {
             $_SESSION['id'] = $compteAdmin[0]['id'];
             $_SESSION['mail']=$compteAdmin[0]['mail'];
 
-        header('Location: index.php?p=layoutAdministrateur');
+        header('Location: index.php?p=adminView');
 
 
 

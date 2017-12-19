@@ -12,7 +12,7 @@
 <body>
 <div class="login-page">
     <div class="form-wrapper">
-        <h1>Join Admin</h1>
+        <h1>Connection Admin</h1>
         <!--            <p> Inscription</p>
         -->            <form class="login-form" method="post" enctype="multipart/form-data">
             <div class="form-item"> <input type="mail" name="mail" placeholder="email address" /></div>
