@@ -14,7 +14,7 @@ require_once ('Views/Layout.php');
             <div class="list-group">
                 <a href="index.php?p=solaire" class="list-group-item">Solaire</a>
                 <a href="index.php?p=vue" class="list-group-item">Vue</a>
-                <a href="#" class="list-group-item">Lentilles</a>
+                <a href="index.php?p=lentille" class="list-group-item">Lentilles</a>
             </div>
 
         </div>

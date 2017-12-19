@@ -99,7 +99,19 @@ class GlassesSQL
 
         return $vueGlasses;
     }
+ public function selectLentille()
+    {
+        global $bdd;
 
+        $selectLentille = $bdd->prepare("SELECT * FROM glasses WHERE type = 'Lentille'");
+        $selectLentille->execute();
+        $lentilleGlasses = $selectLentille->fetchAll();
+
+        return $lentilleGlasses;
+    }
+    
+    
+    
     public function countGlasses()
     {
         global $bdd;

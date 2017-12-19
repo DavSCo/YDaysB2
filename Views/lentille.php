@@ -22,10 +22,10 @@ require_once ('Views/Layout.php');
         <div class="col-lg-9">
             <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
 
-        </div>
+            </div>
 
             <div class="row">
-                <?php foreach ($solaireGlasses as $item) { ?>
+                <?php foreach ($lentilleGlasses as $item) { ?>
 
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">

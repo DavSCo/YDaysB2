@@ -25,7 +25,10 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/solaireController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'vue'){
     require_once('Controllers/vueController.php');
-}elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'lentille'){
+    require_once('Controllers/lentilleController.php');
+}
+elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
     require_once('Controllers/productDetailController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'connection'){
     require_once('Controllers/connectionController.php');
