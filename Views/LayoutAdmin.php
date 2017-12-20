@@ -10,12 +10,16 @@
     <title>SB Admin - Start Bootstrap Template</title>
     <!-- Bootstrap core CSS-->
     <link href="Views/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Views/css/styleform.css">
     <!-- Custom fonts for this template-->
     <link href="Views/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
     <link href="Views/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="Views/css/sb-admin.css" rel="stylesheet">
+    <link href="Views/css/sb-administrateur.css" rel="stylesheet">
+     <link href="Views/css/shop-homepage.css" rel="stylesheet">
+  
 
 </head>
 

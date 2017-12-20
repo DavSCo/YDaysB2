@@ -12,39 +12,39 @@
                 <form class="ui form" method="post"enctype="multipart/form-data">
                     <h4 class="ui dividing header">Add Glasses</h4>
                     <div class="field">
-                        <label>Name</label>
+                        
                         <div class="twelve wide field">
                             <div class="field">
-                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="name" id="essaie" placeholder="Name">
                             </div>
                         </div>
                     </div>
                     <div class="field">
-                        <label>Marque</label>
+                       
                         <div class="fields">
                             <div class="twelve wide field">
-                                <input type="text" name="marque" placeholder="Marque">
+                                <input type="text" name="marque"id="essaie" placeholder="Marque">
                             </div>
                         </div>
                     </div>
                     <div class="field">
-                        <label>Price</label>
+                        
                         <div class="fields">
                             <div class="twelve wide field">
-                                <input type="text" name="price" placeholder="Price">
+                                <input type="text" name="price"id="essaie" placeholder="Price">
                             </div>
                         </div>
                     </div>
                     <div class="field">
-                        <label>Size</label>
+                        
                         <div class="fields">
                             <div class="twelve wide field">
-                                <input type="text" name="size" placeholder="Size">
+                                <input type="text" name="size" id="essaie" placeholder="Size">
                             </div>
                         </div>
                     </div>
                     <div class="field">
-                        <label>Type</label>
+                          <label>Type</label>
                         <div class="fields">
                             <div class="twelve wide field">
                                 <input type="radio" name="type" value="Solaire">
@@ -57,10 +57,10 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label>Reference</label>
+                     
                         <div class="fields">
                             <div class="twelve wide field">
-                                <input type="text" name="ref" placeholder="Reference">
+                                <input type="text" name="ref" id="essaie" placeholder="Reference">
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label>Reference</label>
+                        
                         <div class="fields">
                             <div class="twelve wide field">
                                 <input type="file" placeholder="Image " name="image"> <br>
@@ -87,7 +87,7 @@
                     </div>
 
 
-
+<br>
                     <button type="submit" class="ui button">Add Glasses</button>
 
                 </form>
