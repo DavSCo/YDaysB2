@@ -18,8 +18,8 @@ if (!empty($_POST)) {
 
 
         }
-
     }
+
     $add->AddGlasses($image);
 
 }
