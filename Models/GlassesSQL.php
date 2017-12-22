@@ -123,4 +123,18 @@ class GlassesSQL
 
         return $counts;
     }
+
+    public function selectImage($id)
+    {
+        global $bdd;
+
+        $select = $bdd->prepare("SELECT image FROM glasses WHERE id=:id");
+        $select->bindParam(":id", $id, PDO::PARAM_STR);
+        $select->execute();
+        $img = $select->fetch();
+
+        return $img;
+
+    }
+
 }

@@ -52,7 +52,13 @@ elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
     require_once('Controllers/ListProductAdminController.php');
 } elseif(!isset($_GET['p']) OR $_GET['p'] === 'monCompte'){
     require_once('Controllers/monCompteController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'addPanier'){
+    require_once('Controllers/addPanierController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'deleteItemPanier'){
+    require_once('Controllers/deleteItemPanierController.php');
 }
+
+
 
 
 

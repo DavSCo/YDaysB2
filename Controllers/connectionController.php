@@ -15,8 +15,8 @@ if (!empty($_POST['mail'])&& !empty($_POST['password'])) {
             $_SESSION['connected']=true;
             $_SESSION['id'] = $compte[0]['id'];
             $_SESSION['mail']=$compte[0]['mail'];
-            var_dump($_SESSION);
-            //header('location:index.php');
+
+            header('location:index.php');
         }
 
 

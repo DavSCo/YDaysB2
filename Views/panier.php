@@ -7,20 +7,29 @@
       <h1 class="my-4">Votre Panier
       </h1>
 
-
-      <div class="row">
+<?php
+$number = count($_SESSION['panier']['idProduct']);
+for($i = 0; $i<$number;$i++) { ?>
+    <div class="row">
         <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="<?=$selectPanier['image'] ?>" alt="">
-          </a>
+            <a href="#">
+                <img class="img-fluid rounded mb-3 mb-md-0" src="<?php if (!empty($_SESSION['panier']['imgProduct'][$i]['image'])){echo $_SESSION['panier']['imgProduct'][$i]['image'];}else{echo 'http://placehold.it/700x300';}?>" style="width:400px">
+            </a>
         </div>
         <div class="col-md-5">
-          <h3><?php echo $selectPanier['name'];?></h3>
-            <h4><?php echo $selectPanier['marque'];?></h4>
-          <p><?php echo $selectPanier['price'];?> €</p>
-          <a class="btn btn-primary" href="index.php?p=rentPage&id=<?php echo $selectPanier['id'];?>">Payer</a>
+            <h3><?php echo $_SESSION['panier']['nameProduct'][$i]?></h3>
+            <h5><?php echo $_SESSION['panier']['brandProduct'][$i]?></h5>
+            <p><?php echo $_SESSION['panier']['priceProduct'][$i]?> €</p>
+            <a class="btn btn-primary" href="index.php?p=rentPage&id=<?php echo $_SESSION['panier']['idProduct'][$i];?>">Payer</a>
+            <a class="btn btn-primary" href="index.php?p=deleteItemPanier&id=<?php echo $i;?>">Supprimer</a>
         </div>
-      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+<?php } ?>
+
 
       <!-- /.row -->
 
