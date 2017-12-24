@@ -3,7 +3,7 @@ require_once('Models/AdminSQL.php');
 
 
 $connect = new AdminSQL();
-
+var_dump($_SESSION);
 
 if (!empty($_POST['mail']) && !empty($_POST['password'])) {
 

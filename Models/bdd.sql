@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:8889
--- Généré le :  Ven 15 Décembre 2017 à 14:00
+-- Généré le :  Dim 24 Décembre 2017 à 15:22
 -- Version du serveur :  5.6.33
 -- Version de PHP :  7.0.12
 
@@ -46,6 +46,13 @@ CREATE TABLE `commandes` (
   `glasses_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Contenu de la table `commandes`
+--
+
+INSERT INTO `commandes` (`id`, `ref`, `user_id`, `glasses_id`) VALUES
+(1, 'test1', 1, 11);
+
 -- --------------------------------------------------------
 
 --
@@ -61,7 +68,7 @@ CREATE TABLE `glasses` (
   `type` varchar(255) NOT NULL,
   `ref` varchar(255) NOT NULL,
   `sexe` varchar(255) NOT NULL,
-  `image` blob NOT NULL
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -69,13 +76,13 @@ CREATE TABLE `glasses` (
 --
 
 INSERT INTO `glasses` (`id`, `name`, `marque`, `price`, `size`, `type`, `ref`, `sexe`, `image`) VALUES
-(1, 'test', 't', 't', 't', 't', 't', 't', ''),
 (2, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
 (3, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
 (4, 'Pilote', 'RayBan', '150', '10', 'Solaire', 'RB1345', 'Homme', ''),
-(5, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', ''),
-(6, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', ''),
-(7, 't', 't', 't', 't', 'Mixte', 'tt', 'tt', '');
+(8, 'hh', 'h', 'h', 'h', 'Solaire', 'hh', 'Femme', ''),
+(9, 'tt', 't', 't', 't', 'Solaire', 'tt', 'Homme', ''),
+(10, 'tet', 't', 't', 't', 'Solaire', 'ytt', 'Femme', 'Views/images/upload/12291712_1693889184212303_23729183212508149_o.jpg'),
+(11, 'test1', 't', 'r', 'e', 'Solaire', '1456789', 'Mixte', 'Views/images/upload/12291712_1693889184212303_23729183212508149_o (1).jpg');
 
 -- --------------------------------------------------------
 
@@ -101,7 +108,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `last_name`, `mail`, `password`, `street`, `zip_code`, `city`, `country`, `phone`) VALUES
-(1, 'Bill', 'gate', 'b@b.fr', '$2a$07$302838711915bef2db65cO0u1RrG1.8x9wubJNk6RQGUQVbYY8iD2', '15-17 RUE LOUIS BLANC', '75010', 'PARIS ', 'France', '06128767677');
+(1, 'Bill', 'Gate', 'b@b.fr', '$2a$07$302838711915bef2db65cOvA0sPu..ni2bSXouy62nYC87SNrHt0q', '15-17 RUE LOUIS BLANC', '75020', 'PARIS ', 'France', '06128767677'),
+(2, 'tes', 'tes', 't', '$2a$07$302838711915bef2db65cOVl78FpEwYHlFGRuCaamrZGzTy0KCUK.', 't', 'r', 'r', 'r', '234'),
+(3, 'tet', 't', 't', '$2a$07$302838711915bef2db65cOVl78FpEwYHlFGRuCaamrZGzTy0KCUK.', 't', 't', 't', 't', '11');
 
 --
 -- Index pour les tables exportées
@@ -146,14 +155,14 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT pour la table `commandes`
 --
 ALTER TABLE `commandes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT pour la table `glasses`
 --
 ALTER TABLE `glasses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;

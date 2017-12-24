@@ -29,13 +29,13 @@ require_once('Views/Layout.php');
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                        <img class="d-block img-fluid" src="Views/images/sun-glass-1088490_1280 (1).png" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                        <img class="d-block img-fluid" src="Views/images/glas.png" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                        <img class="d-block img-fluid" src="Views/images/glasses-1145125_1280.png" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
