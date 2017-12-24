@@ -15,4 +15,4 @@ if (!empty($_POST['name']) && !empty($_POST['last_name']) && !empty($_POST['mail
 
 }
 
-require_once ("Views/adminUser.php");
+require_once ("Views/updateUsers.php");

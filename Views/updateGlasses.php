@@ -68,6 +68,9 @@
                     <input type="radio" name="sexe" value="Mixte">
                     <label for="contactChoice1">Mixte</label>
                 </div>
+                <div class="form-group">
+                    <input type="file" class="file" placeholder="Image " name="image"> <br>
+                </div>
                 <div class="text-center">
                     <input type="submit" value="Update" class="btn btn-start-order">
                 </div>

@@ -1,3 +1,10 @@
+.row{
+    text-align: center;
+}
+
+.formulaire{
+    left:35%;
+}
 .form-label {
     font-size: 12px;
     color: #5e9bfc;

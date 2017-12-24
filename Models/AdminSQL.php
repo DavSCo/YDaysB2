@@ -57,6 +57,7 @@ class AdminSQL
         $update->bindParam(":type", $type, PDO::PARAM_STR);
         $update->bindParam(":ref", $ref, PDO::PARAM_STR);
         $update->bindParam(":sexe", $sexe, PDO::PARAM_STR);
+
         $update->bindParam(":id", $id, PDO::PARAM_STR);
 
 
@@ -64,6 +65,13 @@ class AdminSQL
 
         var_dump($update->errorInfo());
 
+    }
+    public function updateImgGlasses($image)
+    {
+        global $bdd;
+
+        $update=$bdd->prepare("UPDATE glasses SET image=:image WHERE id=:id");
+        $update->bindParam(":image", $image, PDO::PARAM_STR);
     }
 
 

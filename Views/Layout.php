@@ -65,7 +65,7 @@
                         <a class="nav-link" href="index.php?p=deconnection">Deconnection</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?p=adminUser">Mon Compte</a>
+                        <a class="nav-link" href="index.php?p=monCompte">Mon Compte</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?p=panier"><i class="material-icons">shopping_basket</i></a>

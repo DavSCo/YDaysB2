@@ -11,7 +11,7 @@ require_once ('Models/AdminSQL.php');
 
 if (!isset($_GET['p']) OR $_GET['p'] === 'index') {
 require_once('Controllers/homeController.php');
-}elseif(!isset($_GET['p']) OR $_GET['p'] === 'adminUser'){
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'updateUsers'){
 require_once ('Controllers/updateUserController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'delete_user'){
 require_once ('Controllers/deleteUserController.php');
@@ -27,6 +27,8 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/vueController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'lentille'){
     require_once('Controllers/lentilleController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'deleteUsers'){
+    require_once('Controllers/afficherDeleteController.php');
 }
 elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
     require_once('Controllers/productDetailController.php');

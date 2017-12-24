@@ -10,6 +10,7 @@ if (!empty($_GET['id'])) {
     $delete->supprimerCompte($_GET['id']);
        header('Location: index.php?p=register ');
 
+
 }
-require_once('Views/adminUser.php');
+require_once('Views/deleteUsers.php');
 

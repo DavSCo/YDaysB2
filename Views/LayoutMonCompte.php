@@ -14,6 +14,8 @@
     <link href="Views/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
     <link href="Views/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Views/css/formulaire.css">
     <!-- Custom styles for this template-->
     <link href="Views/css/sb-admin.css" rel="stylesheet">
 
@@ -27,19 +29,25 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="index.php?p=adminView">
+                <a class="nav-link" href="index.php?p=monCompte">
                     <i class="fa fa-fw fa-dashboard"></i>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="index.php?p=listProductAdmin">
+                <a class="nav-link" href="index.php?p=commandeUser">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">Mes Info</span>
+                    <span class="nav-link-text">My Order</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="index.php?p=addProduct">
+                <a class="nav-link" href="index.php?p=updateUsers">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">Update</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="index.php?p=deleteUsers">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">Supprimer Mon Compte</span>
                 </a>
