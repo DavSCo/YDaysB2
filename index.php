@@ -29,6 +29,8 @@ require_once ('Controllers/deleteUserController.php');
     require_once('Controllers/lentilleController.php');
 }elseif(!isset($_GET['p']) OR $_GET['p'] === 'deleteUsers'){
     require_once('Controllers/afficherDeleteController.php');
+}elseif(!isset($_GET['p']) OR $_GET['p'] === 'commandeAdmin'){
+    require_once('Controllers/afficherCommandeAdminController.php');
 }
 elseif(!isset($_GET['p']) OR $_GET['p'] === 'productDetail'){
     require_once('Controllers/productDetailController.php');

@@ -49,6 +49,9 @@
                     <a class="nav-link" href="index.php?p=addProduct">Add product</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="index.php?p=commandeAdmin">Order</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="index.php?p=deconnection">Deconnection</a>
                 </li>
             </ul>

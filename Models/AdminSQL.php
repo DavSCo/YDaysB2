@@ -66,6 +66,15 @@ class AdminSQL
         var_dump($update->errorInfo());
 
     }
+    public function afficherCommande()
+    {
+        global $bdd;
+        $afficher=$bdd->prepare("SELECT * from commandes");
+        $afficher->execute();
+        $afficherCommande=$afficher->fetchAll();
+
+        return $afficherCommande;
+    }
     public function updateImgGlasses($image)
     {
         global $bdd;
