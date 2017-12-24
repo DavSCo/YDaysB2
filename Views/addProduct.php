@@ -13,22 +13,20 @@
             <form id="contact-form" class="form " action="#" method="POST" role="form" style="text-align: center;"
                   enctype="multipart/form-data">
                 <div class="form-group">
-                    <label class="form-label" for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="marque">Marque</label>
                     <input type="text" class="form-control" name="marque" placeholder="Marque">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="price">Price</label>
                     <input type="text" class="form-control" name="price" placeholder="Price">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="size">Size</label>
                     <input name="size" class="form-control" placeholder="Size">
                 </div>
                 <div class="form-group">
+                   
+                    <label class="form-label" for="contactChoice1">Type</label>
                     <input type="radio" name="type" value="Solaire">
                     <label for="contactChoice1">Solaire</label>
                     <input type="radio" name="type" value="Vue">
@@ -39,6 +37,8 @@
                     <input name="ref" class="form-control" placeholder="Ref">
                 </div>
                 <div class="form-group">
+                   
+                    <label class="form-label" for="contactChoice1">Sexe</label>
                     <input type="radio" name="sexe" value="Homme">
                     <label for="contactChoice1">Homme</label>
                     <input type="radio" name="sexe" value="Femme">

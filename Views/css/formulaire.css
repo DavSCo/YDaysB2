@@ -20,7 +20,14 @@
     border-width: 0 0 2px 0;
     border-style: none none solid none;
     box-shadow: none;
+    width: 50%;
+    margin: 20px 240px 20px;
+    height: 52px;
+    border: 1px solid #605353c9;
+}.form-group{
+    letter-spacing: 6px;
 }
+
 .form-control:focus {
     box-shadow: none;
     border-color: #5e9bfc;

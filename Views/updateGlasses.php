@@ -25,6 +25,7 @@
                     <input name="size" class="form-control" value="<?= $updateGlasses['size'] ?>">
                 </div>
                 <div class="form-group">
+                    <label class="form-label" for="contactChoice1">Type</label>
                     <input type="radio" name="type" value="Solaire"<?php if ($updateGlasses['type'] == 'Solaire') echo 'checked="checked"'; ?>>
                     <label for="contactChoice1">Solaire</label>
                     <input type="radio" name="type" value="Vue"<?php if ($updateGlasses['type'] == 'Vue') echo 'checked="checked"'; ?>>
@@ -35,6 +36,8 @@
                     <input name="ref" class="form-control" value="<?= $updateGlasses['ref'] ?>">
                 </div>
                 <div class="form-group">
+                   
+                    <label class="form-label" for="contactChoice1">sexe</label>
                     <input type="radio"  name="sexe" value="Homme"<?php if ($updateGlasses['sexe'] == 'Homme') echo 'checked="checked"'; ?>>
                     <label for="contactChoice1">Homme</label>
                     <input type="radio" name="sexe" value="Femme"<?php if ($updateGlasses['sexe'] == 'Femme') echo 'checked="checked"'; ?>>
