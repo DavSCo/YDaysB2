@@ -17,7 +17,6 @@ if (!isset($_SESSION['panier'])){
 
 
 
-
 if (!empty($_SESSION['panier']))
 {
     $positionProduit = array_search($_GET['nameProduct'], $_SESSION['panier']['nameProduct']);

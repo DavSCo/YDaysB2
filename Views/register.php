@@ -16,18 +16,18 @@
         <!--            <p> Inscription</p>
         -->            <form class="login-form" method="post" enctype="multipart/form-data">
             <div class="form-item">
-                <input type="text" name="name" placeholder="name"></div>
-            <div class="form-item"><input type="text" name="last_name" placeholder="lastName"></div>
-            <div class="form-item"> <input type="mail" name="mail" placeholder="email address" /></div>
-            <div class="form-item"> <input type="password" name="password" placeholder="password"></div>
-            <div class="form-item"> <input type="text" name="street" placeholder="street"></div>
-            <div class="form-item"> <input type="text" name="zip_code" placeholder="zip_code"></div>
-            <div class="form-item"> <input type="text" name="city" placeholder="city"></div>
-            <div class="form-item"> <input type="text" name="country" placeholder="country"></div>
-            <div class="form-item"> <input type="number" name="phone" placeholder="phone"></div>
+                <input type="text" name="name" placeholder="Prenom"></div>
+            <div class="form-item"><input type="text" name="last_name" placeholder="Nom"></div>
+            <div class="form-item"> <input type="mail" name="mail" placeholder="Mail" /></div>
+            <div class="form-item"> <input type="password" name="password" placeholder="Mot de Passe"></div>
+            <div class="form-item"> <input type="text" name="street" placeholder="Rue"></div>
+            <div class="form-item"> <input type="text" name="zip_code" placeholder="Code Postal"></div>
+            <div class="form-item"> <input type="text" name="city" placeholder="Ville"></div>
+            <div class="form-item"> <input type="text" name="country" placeholder="Pays"></div>
+            <div class="form-item"> <input type="number" name="phone" placeholder="Telephone"></div>
             <div class="button-panel">
 
-                <input type="submit" class="button" title="Join us" value="Register">
+                <input type="submit" class="button" title="Join us" value="Inscription">
             </div>
         </form>
 

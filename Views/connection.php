@@ -15,14 +15,14 @@
         <h1>Connection</h1>
         <!--            <p> Inscription</p>
         -->            <form class="login-form" method="post" enctype="multipart/form-data">
-            <div class="form-item"> <input type="mail" name="mail" placeholder="email address" /></div>
-            <div class="form-item"> <input type="password" name="password" placeholder="password"></div>
+            <div class="form-item"> <input type="mail" name="mail" placeholder="Mail" /></div>
+            <div class="form-item"> <input type="password" name="password" placeholder="Mot de Passe"></div>
        
             
             
             <div class="button-panel">
 
-                <input type="submit" class="button" title="Join us" value="Register">
+                <input type="submit" class="button" title="Join us" value="Connection">
             </div>
         </form>
 

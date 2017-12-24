@@ -37,13 +37,13 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="index.php?p=commandeUser">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">My Order</span>
+                    <span class="nav-link-text">Mes Commandes</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="index.php?p=updateUsers">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">Update</span>
+                    <span class="nav-link-text">Modifier mes Infos</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">

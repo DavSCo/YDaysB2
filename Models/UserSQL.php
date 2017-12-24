@@ -93,19 +93,23 @@ class UserSQL
     }
 
 
-    public function updateCompte($name, $last_name,$mail,$phone,$password,$id)
+    public function updateCompte($name, $last_name,$mail,$phone,$password,$id,$street,$zip_code,$city,$country)
     {
         global $bdd;
 
 
         $password = crypt($password, '$2a$07$302838711915bef2db65cc$');
-        $update=$bdd->prepare("UPDATE users SET  name = :name, last_name= :last_name , mail = :mail,phone=:phone, password = :password WHERE id=:id");
+        $update=$bdd->prepare("UPDATE users SET  name = :name, last_name= :last_name , mail = :mail,phone=:phone, password = :password, street = :street, zip_code = :zip_code, city = :city, country = :country WHERE id=:id");
         $update->bindParam(":name", $name, PDO::PARAM_STR);
         $update->bindParam(":last_name", $last_name, PDO::PARAM_STR);
         $update->bindParam(":mail", $mail, PDO::PARAM_STR);
         $update->bindParam(":phone", $phone, PDO::PARAM_STR);
         $update->bindParam(":password", $password, PDO::PARAM_STR);
         $update->bindParam(":id", $id, PDO::PARAM_STR);
+        $update->bindParam(":street", $street, PDO::PARAM_STR);
+        $update->bindParam(":zip_code", $zip_code, PDO::PARAM_STR);
+        $update->bindParam(":city", $city, PDO::PARAM_STR);
+        $update->bindParam(":country", $country, PDO::PARAM_STR);
         $update->execute();
 
         var_dump($update->errorInfo());

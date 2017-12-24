@@ -1,11 +1,11 @@
 <?php
 require_once ('Models/AdminSQL.php');
-
+if (!isset($_SESSION['connected']) || $_SESSION['connected'] === false) header('Location: index.php?p=connectionAdmin');
 
 
 $update = new AdminSQL();
 $updateGlasses = $update->selectGlassesWithId($_GET['id']);
-var_dump($updateGlasses);
+
 
 
 if (!empty($_POST['name']) && !empty($_POST['marque']) && !empty($_POST['price']) &&!empty($_POST['size'])&& !empty($_POST['type'])&& !empty($_POST['ref'])&& !empty($_POST['sexe']))
