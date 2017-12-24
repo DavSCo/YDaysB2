@@ -14,7 +14,7 @@ if (!empty($_POST)) {
         $extension = $filename[count($filename) - 1];
         $image = 'Views/images/upload/' . $_FILES['image']['name'];
         if ($extension == 'jpg' && $mime == 'image/jpeg' || $extension == 'png' && $mime == 'image/png') {
-            move_uploaded_file($_FILES['image']['tmp_name'], $image );
+            move_uploaded_file($_FILES['image']['tmp_name'], $image);
 
 
         }

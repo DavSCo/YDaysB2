@@ -1,6 +1,6 @@
 <?php
 require_once('Models/UserSQL.php');
-$create=new UserSQL();
+$create = new UserSQL();
 
 if (!empty($_POST)) {
 

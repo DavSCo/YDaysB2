@@ -1,24 +1,22 @@
-<?php require_once ('Views/LayoutMonCompte.php'); ?>
+<?php require_once('Views/LayoutMonCompte.php'); ?>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-  <!-- Navigation-->
+<!-- Navigation-->
 
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <!-- Icon Cards-->
-      <div class="row">
-        <div class="col-xl-8 col-sm-6 mb-3">
-            <h1 style="border: 2px solid black; border-radius: 3px; padding:20px; margin-left:30vw ; margin-top: 30vh; ">HELLO <?=$usersId[0]['name'] ?></h1>
+        <!-- Breadcrumbs-->
+        <!-- Icon Cards-->
+        <div class="row">
+            <div class="col-xl-8 col-sm-6 mb-3">
+                <h1 style="border: 2px solid black; border-radius: 3px; padding:20px; margin-left:30vw ; margin-top: 30vh; ">
+                    HELLO <?= $usersId[0]['name'] ?></h1>
 
+            </div>
         </div>
-      </div>
 
 
-          </div>
-
-
-
+    </div>
 
 
     <!-- Bootstrap core JavaScript-->
@@ -35,7 +33,7 @@
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
-  </div>
+</div>
 </body>
 
 </html>

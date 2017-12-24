@@ -8,7 +8,6 @@ class AdminSQL
         global $bdd;
 
 
-
         $selectGlasses = $bdd->prepare("SELECT * FROM glasses");
         $selectGlasses->execute();
         $selectAllGlasses = $selectGlasses->fetchAll();
@@ -22,13 +21,14 @@ class AdminSQL
         global $bdd;
 
 
-        $delete=$bdd->prepare("DELETE from glasses where id= :id");
+        $delete = $bdd->prepare("DELETE from glasses where id= :id");
         $delete->bindParam(":id", $id, PDO::PARAM_STR);
 
         $delete->execute();
 
 
     }
+
     public function selectGlassesWithId($id)
     {
         global $bdd;
@@ -41,15 +41,14 @@ class AdminSQL
         return $selectGlassesId;
 
 
-
     }
 
-    public function updateGlasses($name, $marque,$price,$size,$type,$ref,$sexe,$id)
+    public function updateGlasses($name, $marque, $price, $size, $type, $ref, $sexe, $id)
     {
         global $bdd;
 
 
-        $update=$bdd->prepare("UPDATE glasses SET  name = :name, marque= :marque , price = :price,size=:size,type=:type, ref = :ref , sexe=:sexe WHERE id=:id");
+        $update = $bdd->prepare("UPDATE glasses SET  name = :name, marque= :marque , price = :price,size=:size,type=:type, ref = :ref , sexe=:sexe WHERE id=:id");
         $update->bindParam(":name", $name, PDO::PARAM_STR);
         $update->bindParam(":marque", $marque, PDO::PARAM_STR);
         $update->bindParam(":price", $price, PDO::PARAM_STR);
@@ -66,20 +65,22 @@ class AdminSQL
         var_dump($update->errorInfo());
 
     }
+
     public function afficherCommande()
     {
         global $bdd;
-        $afficher=$bdd->prepare("SELECT * from commandes");
+        $afficher = $bdd->prepare("SELECT * from commandes");
         $afficher->execute();
-        $afficherCommande=$afficher->fetchAll();
+        $afficherCommande = $afficher->fetchAll();
 
         return $afficherCommande;
     }
+
     public function updateImgGlasses($image)
     {
         global $bdd;
 
-        $update=$bdd->prepare("UPDATE glasses SET image=:image WHERE id=:id");
+        $update = $bdd->prepare("UPDATE glasses SET image=:image WHERE id=:id");
         $update->bindParam(":image", $image, PDO::PARAM_STR);
     }
 

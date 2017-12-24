@@ -5,21 +5,20 @@ require_once('Models/AdminSQL.php');
 $connect = new AdminSQL();
 
 
-if (!empty($_POST['mail'])&& !empty($_POST['password'])) {
+if (!empty($_POST['mail']) && !empty($_POST['password'])) {
 
     $compteAdmin = $connect->connectionCompteAdmin();
 
-    if (count($compteAdmin)>0){
+    if (count($compteAdmin) > 0) {
 
-            $_SESSION['connected']=true;
-            $_SESSION['id'] = $compteAdmin[0]['id'];
-            $_SESSION['mail']=$compteAdmin[0]['mail'];
+        $_SESSION['connected'] = true;
+        $_SESSION['id'] = $compteAdmin[0]['id'];
+        $_SESSION['mail'] = $compteAdmin[0]['mail'];
 
-        header('Location: index.php?p=adminView');
+        header('Location: index.php?p=listProductAdmin');
 
 
-
-    } else{
+    } else {
         $erreur = '<p class="erreur">Identifiants incorrects</p>';
         echo $erreur;
     }

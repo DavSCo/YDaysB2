@@ -1,4 +1,4 @@
-<?php require_once ('Views/Layout.php')?>
+<?php require_once('Views/Layout.php') ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,10 +14,10 @@
     <div class="form-wrapper">
         <h1>Connection Admin</h1>
         <!--            <p> Inscription</p>
-        -->            <form class="login-form" method="post" enctype="multipart/form-data">
-            <div class="form-item"> <input type="mail" name="mail" placeholder="email address" /></div>
-            <div class="form-item"> <input type="password" name="password" placeholder="password"></div>
-
+        -->
+        <form class="login-form" method="post" enctype="multipart/form-data">
+            <div class="form-item"><input type="mail" name="mail" placeholder="email address"/></div>
+            <div class="form-item"><input type="password" name="password" placeholder="password"></div>
 
 
             <div class="button-panel">

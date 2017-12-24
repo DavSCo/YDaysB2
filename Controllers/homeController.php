@@ -1,9 +1,9 @@
 <?php
-require_once ('Models/GlassesSQL.php');
+require_once('Models/GlassesSQL.php');
 
 $selectGlasses = new GlassesSQL();
 
 $selectXGlasses = $selectGlasses->selectXGlasse();
 
 
-require_once ('Views/home.php');
+require_once('Views/home.php');

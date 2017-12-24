@@ -27,13 +27,15 @@
         <input type="text" name="country" value="<?= $updateUsers[0]['country'] ?>" placeholder="country">
         <label for="phone">Phone</label>
         <input type="text" name="phone" value="<?= $updateUsers[0]['phone'] ?>" placeholder="phone">
-        <input type="button" name="next" class="next action-button" value="Next" />
+        <input type="button" name="next" class="next action-button" value="Next"/>
 
 
     </fieldset>
     <fieldset>
         <h2 class="fs-title">Payment</h2>
-        <a href="index.php?p=paymentPage&id=<?echo $_GET['id']?>"><input type="button" name="next" class="next action-button" value="Payer" /></a>
+        <a href="index.php?p=paymentPage&id=<? echo $_GET['id'] ?>"><input type="button" name="next"
+                                                                           class="next action-button"
+                                                                           value="Payer"/></a>
     </fieldset>
     <fieldset>
         <h2 class="fs-title">Confirmation</h2>

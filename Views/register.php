@@ -1,4 +1,4 @@
-<?php require_once ('Views/Layout.php')?>
+<?php require_once('Views/Layout.php') ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,17 +14,18 @@
     <div class="form-wrapper">
         <h1>Inscription</h1>
         <!--            <p> Inscription</p>
-        -->            <form class="login-form" method="post" enctype="multipart/form-data">
+        -->
+        <form class="login-form" method="post" enctype="multipart/form-data">
             <div class="form-item">
                 <input type="text" name="name" placeholder="Prenom"></div>
             <div class="form-item"><input type="text" name="last_name" placeholder="Nom"></div>
-            <div class="form-item"> <input type="mail" name="mail" placeholder="Mail" /></div>
-            <div class="form-item"> <input type="password" name="password" placeholder="Mot de Passe"></div>
-            <div class="form-item"> <input type="text" name="street" placeholder="Rue"></div>
-            <div class="form-item"> <input type="text" name="zip_code" placeholder="Code Postal"></div>
-            <div class="form-item"> <input type="text" name="city" placeholder="Ville"></div>
-            <div class="form-item"> <input type="text" name="country" placeholder="Pays"></div>
-            <div class="form-item"> <input type="number" name="phone" placeholder="Telephone"></div>
+            <div class="form-item"><input type="mail" name="mail" placeholder="Mail"/></div>
+            <div class="form-item"><input type="password" name="password" placeholder="Mot de Passe"></div>
+            <div class="form-item"><input type="text" name="street" placeholder="Rue"></div>
+            <div class="form-item"><input type="text" name="zip_code" placeholder="Code Postal"></div>
+            <div class="form-item"><input type="text" name="city" placeholder="Ville"></div>
+            <div class="form-item"><input type="text" name="country" placeholder="Pays"></div>
+            <div class="form-item"><input type="number" name="phone" placeholder="Telephone"></div>
             <div class="button-panel">
 
                 <input type="submit" class="button" title="Join us" value="Inscription">

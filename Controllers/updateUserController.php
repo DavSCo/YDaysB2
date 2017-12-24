@@ -1,10 +1,10 @@
 <?php
-require_once ('Models/UserSQL.php');
+require_once('Models/UserSQL.php');
 if (!isset($_SESSION['connected']) || $_SESSION['connected'] === false) header('Location: index.php');
 
 
 $update = new UserSQL();
-$updateUsers=$update->recupUser($_SESSION['id']);
+$updateUsers = $update->recupUser($_SESSION['id']);
 
 
 

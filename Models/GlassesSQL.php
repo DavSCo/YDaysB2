@@ -22,7 +22,6 @@ class GlassesSQL
         $sexe = $_POST['sexe'];
 
 
-
         $add = $bdd->prepare("INSERT INTO glasses (name, marque,  price,  size, type, ref, sexe,image) VALUES(:name, :marque,  :price,  :size, :type, :ref, :sexe, :image)");
 
 
@@ -45,7 +44,6 @@ class GlassesSQL
         global $bdd;
 
 
-
         $selectGlasses = $bdd->prepare("SELECT * FROM glasses");
         $selectGlasses->execute();
         $selectAllGlasses = $selectGlasses->fetchAll();
@@ -63,7 +61,6 @@ class GlassesSQL
         $selectGlassesId = $selectGlassesWithId->fetch();
 
         return $selectGlassesId;
-
 
 
     }
@@ -100,7 +97,8 @@ class GlassesSQL
 
         return $vueGlasses;
     }
- public function selectLentille()
+
+    public function selectLentille()
     {
         global $bdd;
 
@@ -110,9 +108,8 @@ class GlassesSQL
 
         return $lentilleGlasses;
     }
-    
-    
-    
+
+
     public function countGlasses()
     {
         global $bdd;
